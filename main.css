@@ -1,0 +1,36 @@
+/*********************************
+*main css file for portfolio site*
+*created by @vybekid1            *
+* on March 2021                  *
+*********************************/
+nav {
+    background-color: #003d00;
+    color: rgb(253, 253, 253);
+    height: 40px;
+}
+a{
+    color: #000;
+}
+a :hover{
+    color: rgb(173, 171, 16);
+}
+header{
+   background-color: #30611d;
+   font-family:Arial, Helvetica, sans-serif;
+   font-size: 0.75rem;
+   font-weight: bold;
+   font-style: italic;
+}
+footer{
+    background-color: #629749;
+    text-align: center;
+}
+ul{
+    display: flex;
+}
+li{
+    padding: 30pt;
+}
+a{
+    text-align: center;
+}
