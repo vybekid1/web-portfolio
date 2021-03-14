@@ -1,18 +1,15 @@
-/*********************************
-*main css file for portfolio site*
-*created by @vybekid1            *
-* on March 2021                  *
-*********************************/
+/***************************************
+*main css file for portfolio site       *
+*created by @vybekid1                *
+* on March 2021                           *
+**************************************/
 nav {
     background-color: #003d00;
     color: rgb(253, 253, 253);
     height: 40px;
 }
 a{
-    color: #000;
-}
-a :hover{
-    color: rgb(173, 171, 16);
+    text-align: center;
 }
 header{
    background-color: #30611d;
@@ -24,13 +21,14 @@ header{
 footer{
     background-color: #629749;
     text-align: center;
+    padding: auto;
 }
 ul{
     display: flex;
+    flex-wrap: wrap;
+    text-align: center;
 }
 li{
-    padding: 30pt;
-}
-a{
-    text-align: center;
+    display: block;
+    padding: auto;
 }
