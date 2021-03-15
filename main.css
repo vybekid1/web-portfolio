@@ -11,8 +11,9 @@ body {
 nav {
     background-color: #003d00;
     color: rgb(253, 253, 253);
-    line-height: 50px;
+    line-height: 70px;
     padding: 5px;
+    height: 150px;
 }
 
 nav a{
