@@ -51,7 +51,7 @@ main .column{
 }
 main{
     background:#fff url("pic.png") ;
-    padding: 20px;
+    padding: auto;
     
 }
 footer {
