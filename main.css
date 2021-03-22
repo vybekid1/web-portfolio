@@ -1,20 +1,21 @@
 /*****************************************
-*main css file for portfolio site          *
-*created by @vybekid1                    *
-* on March 2021                              *
-*****************************************/
+*main css file for portfolio site                        *
+*created by @vybekid1                                     *
+* on March 2021                                                *
+******************************************/
 body {
     font-size: 16px;
     letter-spacing: 0.01rem;
     font-family:Arial, Helvetica, sans-serif;
+    position:relative;
 }
 
 nav {
     background-color: #003d00;
     color: rgb(253, 253, 253);
     padding: 5px;
-    line-height: 50px;
-    font-size: 1rem;
+    line-height: 40px;
+    font-size: 0.35rem;
 }
 
 nav a{
@@ -22,15 +23,14 @@ nav a{
     padding: 5px;
 }
 
-header {
-   background-color: #30611d;
-   font-family:Arial, Helvetica, sans-serif;
-   font-size: 0.75rem;
-   font-weight: bold;
-}
 
 table {
     border-collapse: collapse;
+}
+
+img {
+    max-width: 200px;
+    min-width: 50px;
 }
 
 a {
@@ -51,7 +51,7 @@ main .column{
 }
 main{
     background:#fff url("pic.png") ;
-    padding: auto;
+    padding:1px;
     
 }
 footer {
@@ -62,6 +62,28 @@ footer ul li {
     list-style: none;
 }
 
+span{
+    font-weight: 500;
+    text-decoration: underline;
+    text-align: center;
+}
 footer p  {
     text-align: center;
+}
+#right,#left{
+    float: left;
+    width: 20%;
+    background:teal;
+    margin: 0px;
+    padding: 3px;
+    font-size: 0.15rem;
+    text-align: center;
+}
+.blog{
+    display: flex;
+    border-spacing: 5px;
+}
+#center{
+    width: 60%;
+    background:white;
 }
