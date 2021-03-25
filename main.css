@@ -1,56 +1,84 @@
-/*****************************************
-*main css file for portfolio site                        *
-*created by @vybekid1                                     *
-* on March 2021                                                *
-******************************************/
+*{
+    box-sizing: border-box;
+}
 body {
     font-size: 16px;
     letter-spacing: 0.01rem;
     font-family:Arial, Helvetica, sans-serif;
-    position:relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+img{
+    flex-shrink: 50px;
 }
 
-nav {
-    background-color: #003d00;
+header{
+    flex-grow:0 ;
+
+}
+
+main{
+    background:#fff url("pic.png") ;
+    padding:1px;
+    flex-grow: 1;
+}
+
+.hero{
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar  {
+    background-color: #ffffff;
     color: rgb(253, 253, 253);
     padding: 5px;
-    line-height: 40px;
-    font-size: 0.35rem;
+    line-height: 20px;
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-nav a{
-    border: brown 2px solid;
+
+.navbar-collapse a{
     padding: 5px;
 }
 
 
 table {
-    border-collapse: collapse;
+    border-collapse:collapse;
+
 }
 
 a {
-    color: white;
+    color: rgb(3, 1, 131);
     text-decoration: none;
+    padding: 3px;
+}
+nav a {
+    color: rgb(3, 1, 131);
+    text-decoration: none;
+    border: 1px blue solid;
+    padding: 3px;
 }
 
 a:hover {
-    background-color: brown;
+    background-color: blue;
+    color: rgb(255, 255, 255);
+
 
 }
+
 main .column{
     float: right;
     width: 50%;
 }
-.navbar{
-    float: right;
-}
-main{
-    background:#fff url("pic.png") ;
-    padding:1px;
-    
-}
+
 footer {
     background-color: #629749;
+    flex-grow: 0;
 }
 
 footer ul li {
@@ -64,21 +92,4 @@ span{
 }
 footer p  {
     text-align: center;
-}
-#right,#left{
-    float: left;
-    width: 20%;
-    background:teal;
-    margin: 0px;
-    padding: 3px;
-    font-size: 0.15rem;
-    text-align: center;
-}
-.blog{
-    display: flex;
-    border-spacing: 5px;
-}
-#center{
-    width: 60%;
-    background:white;
 }
