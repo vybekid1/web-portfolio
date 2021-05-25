@@ -144,6 +144,93 @@ form{
     background: none;
     width: 20px;
 }
+.projects{
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding:10px ;
+    flex-wrap: wrap;
+    top: 15%;
+}
+.projects img{
+    width: auto;
+    max-width: 300px;
+    height:auto;
+    border-radius: 5px;
+    border: 3px solid aqua;
+}
+h2{
+    position: relative;
+}
+.projects .hotel{
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    flex-direction: column;
+    border: 3px solid aquamarine;
+}
+.projects .hotel p{
+    width: 300px;
+   text-align: center;
+   justify-content: space-between;
+}
+.projects .hotel a{
+    border:  2px solid antiquewhite;
+    border-radius: 20px;
+    background: antiquewhite;
+    padding: 3px 10px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 800;
+}
+.projects .shopping{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    flex-direction: column;
+    border: 3px solid aquamarine;
+}
+.projects .shopping p{
+    width: 300px;
+   text-align: center;
+   justify-content: space-between;
+}
+.projects .shopping a{
+    border:  2px solid antiquewhite;
+    border-radius: 20px;
+    background: antiquewhite;
+    padding: 3px 10px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 800;
+}
+.projects .profile{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    flex-direction: column;
+    border: 3px solid aquamarine;
+}
+.projects .profile p{
+    width: 300px;
+   text-align: center;
+   justify-content: space-between;
+}
+.projects .profile a{
+    border:  2px solid antiquewhite;
+    border-radius: 20px;
+    background: antiquewhite;
+    padding: 3px 10px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 800;
+}
 @media (max-width:815px){
     form{
         position:relative;
@@ -222,6 +309,98 @@ flex-direction: column;
     background-position: center;
     transition: .5s ease;
 }
+.projects{
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10%;
+    transform: translate(0);
+}
+.projects img{
+    width: auto;
+    max-width: 250px;
+    height:auto;
+    border-radius: 5px;
+    border: 3px solid aqua;
+}
+.projects h4{
+    margin-bottom: 10px;
+}
+h2{
+    position: relative;
+}
+.projects .hotel{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    flex-direction: column;
+    border: 3px solid aquamarine;
+}
+.projects .hotel p{
+    width: 150px;
+   text-align: center;
+   justify-content: space-between;
+}
+.projects .hotel a{
+    border:  2px solid antiquewhite;
+    border-radius: 20px;
+    background: antiquewhite;
+    padding: 3px 10px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 800;
+}
+.projects .shopping{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    flex-direction: column;
+    border: 3px solid aquamarine;
+}
+.projects .shopping p{
+    width: 150px;
+   text-align: center;
+   justify-content: space-between;
+}
+.projects .shopping a{
+    border:  2px solid antiquewhite;
+    border-radius: 20px;
+    background: antiquewhite;
+    padding: 3px 10px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 800;
+}
+.projects .profile{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    flex-direction: column;
+    border: 3px solid aquamarine;
+}
+.projects .profile p{
+    width: 150px;
+   text-align: center;
+   justify-content: space-between;
+}
+.projects .profile a{
+    border:  2px solid antiquewhite;
+    border-radius: 20px;
+    background: antiquewhite;
+    padding: 3px 10px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 800;
+}
 }
 
 .spotify p{
@@ -242,7 +421,6 @@ flex-direction: column;
 }
 iframe{
     border-radius: 5px;
-    font-family:"Comic Sans Serif";
 }
 main .column{
     float: right;
@@ -251,14 +429,21 @@ main .column{
 
 footer {
     background:rgb(58, 51, 53);
-    flex-grow: 0;
-    margin: o
-    0px;
+    height: 100px;
+    padding:  15px 50px;
+    justify-content: center;
+    align-items: center;
 }
-.social{
+.social {
+ 
     text-decoration: none;
     text-align: center;
     justify-content: space-evenly;
+}
+.social a{
+    color: blanchedalmond;
+    align-items: center;
+    font-size: 2em;
 }
 
 .spotify span {
@@ -274,6 +459,7 @@ footer {
 }
 footer p  {
     text-align: center;
+    color: blanchedalmond;
 }
 textarea{
     background: none;
