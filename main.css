@@ -14,6 +14,7 @@ section{
     align-items: center;
     background: #2a2c2a;
 }
+
 section .circle{
     position: absolute;
     top: 0;
@@ -58,17 +59,16 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding:15px 100px ;
+    padding:15px 140px ;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: 0.5s;
 }
-header .logo{
+header .logo img{
     font-size: 1.3em;
-    font-weight: 900;
-    max-width: 150px;
-    width: 140px;
+    max-width: 100px;
+    width: 100px;
      text-decoration: none;
     cursor: pointer;
     color: #009688;
@@ -232,6 +232,9 @@ h2{
     font-weight: 800;
 }
 @media (max-width:815px){
+    header .logo img{
+        width: 100px;
+    }
     form{
         position:relative;
         font-size: 1.2em;
@@ -342,9 +345,8 @@ h2{
     border: 3px solid aquamarine;
 }
 .projects .hotel p{
-    width: 150px;
+    width: 200px;
    text-align: center;
-   justify-content: space-between;
 }
 .projects .hotel a{
     border:  2px solid antiquewhite;
@@ -365,7 +367,7 @@ h2{
     border: 3px solid aquamarine;
 }
 .projects .shopping p{
-    width: 150px;
+    width: 200px;
    text-align: center;
    justify-content: space-between;
 }
@@ -388,7 +390,7 @@ h2{
     border: 3px solid aquamarine;
 }
 .projects .profile p{
-    width: 150px;
+    width: 200px;
    text-align: center;
    justify-content: space-between;
 }
@@ -402,7 +404,6 @@ h2{
     font-weight: 800;
 }
 }
-
 .spotify p{
     font-size: 1.3rem;
     padding: -3px;
@@ -444,6 +445,10 @@ footer {
     color: blanchedalmond;
     align-items: center;
     font-size: 2em;
+    padding: 6px;
+}
+.social a:hover{
+    color: rgb(3, 96, 150);transition: .7s ease-in-out;
 }
 
 .spotify span {
