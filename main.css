@@ -1,95 +1,292 @@
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family:"Poppins";
 }
-body {
-    font-size: 16px;
-    letter-spacing: 0.01rem;
-    font-family:Arial, Helvetica, sans-serif;
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
     display: flex;
-    flex-direction: column;
-    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    background: #2a2c2a;
 }
-img{
-    flex-shrink: 50px;
+section .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e51e2a;
+    clip-path: circle(70% at right -20% );
+}
+section .circle1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #6e8e97;
+    clip-path: circle(30% at left 70% );
+}
+section .circle2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: .7;
+    width: 100%;
+    height: 100%;
+    background: #646d70;
+    clip-path: circle(50% at center 30% );
+}
+section .circle3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #11baee;
+    clip-path: circle(30% at center 90% );
+    opacity: .4;
 }
 
 header{
-    flex-grow:0 ;
-
-}
-
-main{
-    background:#fff url("pic.png") ;
-    padding:1px;
-    flex-grow: 1;
-}
-
-.hero{
-    flex-direction: row-reverse;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:15px 100px ;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header .logo{
+    font-size: 1.3em;
+    font-weight: 900;
+    max-width: 150px;
+    width: 140px;
+     text-decoration: none;
+    cursor: pointer;
+    color: #009688;
+}
+header .navbar{
+    position: relative;
+    z-index: 1;
+}
+header .navbar .navbar-collapse a{
+    position: relative;
+    font-size: 1em;
+    font-weight: 500;
+    color: rgb(12, 121, 216);
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.5s ease;
+}
+header .navbar .navbar-collapse a::before{
+    content: ' ';
+    position: absolute;
+    background: rgb(11, 28, 61);
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.8s  ease;
+}
+header .navbar .navbar-collapse a:hover:before{
+    width: 100%;
+}
+header .navbar .navbar-collapse a:hover{
+    color: aquamarine;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .text{
+    position: relative;
+    max-width: 600px;
+    margin-right: 20px;
+
+}
+.content .text h1{
+    color: aquamarine;
+    font-size: 3em;
+    margin-bottom: 8px;
+    line-height: 1.3em;
+    font-weight: 00;
+}
+.content .text p{
+    color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-betweene;
+}
+.content .text p img{
+    max-width: 250px;
     justify-content: space-around;
 }
-
-.navbar  {
-    background-color: #ffffff;
-    color: rgb(253, 253, 253);
-    padding: 5px;
-    line-height: 20px;
-    font-size: 0.75rem;
+form{
+    position: relative;
+    font-size: 1em;
+    padding: 10px 100px;
+    font-weight: 300;
+    color: rgb(180, 252, 228);
+    width: fit-content;
+}
+#mobile,#mail{
+    background: none;
+    width: 20px;
+}
+@media (max-width:815px){
+    form{
+        position:relative;
+        font-size: 1.2em;
+        padding: 5px 0px;
+        font-weight: 300;
+        color: rgb(180, 252, 228);
+        width: fit-content;
+    }
+    
+    header{
+        padding: 12px 20px;
+}
+section{
+        padding: 100px 20px;
+}
+header .navbar{
+    display: none;
+}
+header .navbar.active{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    background:rgba(5, 5, 10, .7);
+}
+header .navbar .navbar-collapse a{
+    color: aliceblue;
+    font-size: 1em;
+    margin: 20px;
+    
+}
+header .navbar .navbar-collapse a:hover{
+    letter-spacing: 2px;
+}
+header .navbar .navbar-collapse a::before{
+    background: #222;
+    height: 5px;
+}
+header .navbar.active .navbar-collapse{
+background: #7caab8;
+width: 400px;
+max-width: 500px;
+margin: 10px;
+padding: 40px;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius: 5px;
+box-shadow: 0 5px 25px rgb(1 1 1/20%) ;
+}
+.text p{
+width: 90%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.menu{
+    width: 20px;
+    cursor: pointer;
+    filter: invert(1);
+    background: url(bars.svg)no-repeat;
+    height: 20px;
+    background-size: 20px;
+    background-position: center;
+    transition: .5s ease;
+}
+.menu.active{
+    z-index: 999;
+    background: url(times.svg)no-repeat;
+    background-size: 20px;
+    background-position: center;
+    transition: .5s ease;
+}
 }
 
-
-.navbar-collapse a{
-    padding: 5px;
-}
-
-
-table {
-    border-collapse:collapse;
-
-}
-
-a {
-    color: rgb(3, 1, 131);
+.spotify p{
+    font-size: 1.3rem;
+    padding: -3px;
     text-decoration: none;
-    padding: 3px;
-}
-nav a {
-    color: rgb(3, 1, 131);
-    text-decoration: none;
-    border: 1px blue solid;
-    padding: 3px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-a:hover {
-    background-color: blue;
-    color: rgb(255, 255, 255);
-
-
+.spotify{
+    position: relative;
+    background-color: rgb(216, 216, 236);
+    padding: 10px;
+    width: fit-content;
+    text-align: center;
+    border-radius: 5px;
 }
-
+iframe{
+    border-radius: 5px;
+    font-family:"Comic Sans Serif";
+}
 main .column{
     float: right;
     width: 50%;
 }
 
 footer {
-    background-color: #629749;
+    background:rgb(58, 51, 53);
     flex-grow: 0;
+    margin: o
+    0px;
 }
-
-footer ul li {
-    list-style: none;
-}
-
-span{
-    font-weight: 500;
-    text-decoration: underline;
+.social{
+    text-decoration: none;
     text-align: center;
+    justify-content: space-evenly;
+}
+
+.spotify span {
+    font-weight: bolder;
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-align:start;
+    color: rgb(10, 141, 76);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.spotify h4{
+    text-align: start;
 }
 footer p  {
     text-align: center;
+}
+textarea{
+    background: none;
+    border: 2px solid  background;
+    text-align: left;
+}
+table{
+    width: 70%;
+    margin: 15px 50px;
+    justify-content: center;
+    position: fixed;
+    border:2px solid aqua;
+    top: 100px;
+
+
 }

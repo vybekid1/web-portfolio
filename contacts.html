@@ -4,66 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
     <title>Contacts</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-        <a href="index.html">Home</a>
-        <div class="navbar-collapse" >
-            <a href="contacts.html">Contacts</a>&nbsp;
-            <a href="blog.html">Blog</a>&nbsp;
-            <a href="about.html">About</a>&nbsp;
-            <a href="projects.html">Projects</a>&nbsp;
-            <a href="services.html">Services</a><br>
-          </div>
-      </nav>
+    <section>
+        <div class="circle"></div>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <header>
+            <a class="logo" href="index.html" >VybeKID</a>
+     <div class="menu"></div>
+        <div class="navbar">
+           <div class="navbar-collapse" >
+               <a href="index.html">Go Home</a>
+               <a href="blog.html">Blog</a>
+               <a href="about.html">About</a>
+               <a href="projects.html">Projects</a>
+               <a href="services.html">Services</a>
+            </div>
+        </div>
     </header>
-      <main>
+    <main>
           <form>
                <p>
               <label for="name">Name:</label>
               <input type="text" name="name" id="name" size="30" placeholder="Your Name"/>
-          </p>
-          <p>
-              <label for="email">Email:&nbsp;</label>
-              <input type="email" name="email" id="email" size="30" placeholder="name@example.com"/>
-          </p>  
-          <p>
-              <label for="tel">Tel</label>
-              <input type="tel" name="tel" id="tel" size="30" placeholder="07xxxxxxxx">
-          </p>
-          <p>
-              <label for="mobile">Preferred Means</label>
-              <input type="radio" name="contact" id="mobile">Tel
-              <input type="radio" name="contact" id="mail">Email
-          </p> 
-          <p>
-              <label for="product">Product</label>
-              <select name="product" id="product">
+            </p>
+            <p>
+                <label for="email">Email:&nbsp;</label>
+                <input type="email" name="email" id="email" size="30" placeholder="name@example.com"/>
+            </p>  
+            <p>
+                <label for="tel">Tel&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+                <input type="tel" name="tel" id="tel" size="30" placeholder="071238765">
+            </p>
+            <p>
+                <label for="mobile">Preferred Means</label>
+                <input type="radio" name="contact" id="mobile">Tel</input>
+                <input type="radio" name="contact" id="mail">Email</input>
+            </p> 
+            <p>
+                <label for="product">Product</label>
+                <select name="product" id="product">
                   <option value="Web">Web Application</option>
                   <option value="Mobile">Mobile Application</option>
                   <option value="desktop">Desktop Application</option>
                   <option value="other">Other</option>
-              </select>
-          </p>
+                </select>
+            </p>
           <p>
               <label for="message">Message</label><br>
               <textarea name="message" id="message" cols="30" rows="10">
-              </textarea>
+            </textarea>
           </p>
           <p>
-          <input type="checkbox" name="offers" id="offers"/>
+              <input type="checkbox" name="offers" id="offers"/>
           <label for="offers">Subscribe to news and offers</label>
         </p>
         <p>
-            <input type="reset" value="cancel">
-            <input type="submit" value="send message">
+            <input type="reset"  id="delete" value="cancel">
+            <input type="submit" id="send" value="send message">
         </p>
-         </form>
-        </main>
-    <footer>
+    </form>
+    </main>
+    </section>
+        <footer>
         <ul>
             <li><a href="https://instagram.com/vybekid1" target="blank">Instagram</a></li>
             <li><a href="https://twitter.com/vybekid1" target="blank">Twitter</a></li>
@@ -72,5 +80,6 @@
        </ul>
        <p> &copy;2021 All Rights Reserved. vybekid1&trade;</p>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
